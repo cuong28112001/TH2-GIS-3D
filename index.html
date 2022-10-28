@@ -474,7 +474,7 @@
             });
 
             const column_decoration_AB_sub1 = new GeoJSONLayer({
-                url: './GeoJSON/column_decoration/column_decoration_AB_sub1.geojson',
+                url: './GeoJSON/column_decoration/AB_sub1/column_decoration_AB_sub1.geojson',
                 renderer: {
                     type: 'simple',
                     symbol: {
@@ -482,7 +482,7 @@
                         symbolLayers: [
                             {
                                 type: 'extrude',
-                                size: 100,
+                                size: 0.14,
                                 material: {
                                     color: '#C2C59C',
                                 },
@@ -496,8 +496,8 @@
                     },
                 },
             });
-            const column_decoration_AB_sub2 = new GeoJSONLayer({
-                url: './GeoJSON/column_decoration/column_decoration_AB_sub2.geojson',
+            const column_decoration_AB_small_sub1 = new GeoJSONLayer({
+                url: './GeoJSON/column_decoration/AB_sub1/column_decoration_AB_small_sub1.geojson',
                 renderer: {
                     type: 'simple',
                     symbol: {
@@ -505,9 +505,9 @@
                         symbolLayers: [
                             {
                                 type: 'extrude',
-                                size: 100,
+                                size: 0.14,
                                 material: {
-                                    color: '#C2C59C',
+                                    color: '#152368',
                                 },
                                 edges: {
                                     type: 'solid', // autocasts as new SolidEdges3D()
@@ -546,7 +546,7 @@
                     stairAB_block3,
 
                     column_decoration_AB_sub1,
-                    column_decoration_AB_sub2
+                    column_decoration_AB_small_sub1,
                 ],
             });
 
